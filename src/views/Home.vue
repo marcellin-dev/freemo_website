@@ -9,16 +9,18 @@
           <br>
           <h3>Depuis votre application Freemo, accédez à l'univers des services Freemo Pay</h3>
           <br>
-          <h5>déposez et retirez de l'argent
-              transférez de l'argent
+          <h5>
+            <p>déposez et retirez de l'argent</p>
+              <p>transférez de l'argent</p>
               payez vos factures
-              payez des produits et services sans vous souciez des problèmes de monnaies
-              recevez vos salaires
+              <p>payez des produits et services sans vous souciez des problèmes de monnaies</p>
+              
               Transférez de l'argent entre votre compte FREEMO-PAY et vers un correspondant ayant ou pas l'application
-              transférez de l'argent entre votre compte bancaire et votre comte Freemo Pay
+              <p>transférez de l'argent entre votre compte bancaire et votre comte Freemo Pay</p>
               
               payez vos assurances
-              payez vos achats en ligne avec votre compte Fremo Pay</h5>
+              <p>payez vos achats en ligne avec votre compte Fremo Pay</p>
+              </h5>
 
               <p><img class="size" src="../assets/google-play-badge.png" alt="" />
                <img class="size mx-4" src="../assets/app-store-badge.svg" alt="" /></p>
