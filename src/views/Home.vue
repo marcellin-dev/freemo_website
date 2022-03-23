@@ -118,12 +118,12 @@ export default {
   height: 40%;
 }
 h3{
-  color: white;
+  color: black;
   font-weight: bold;
   margin: auto;
 }
 h5{
-  color: white;
+  color: black;
   font-weight: bold;
   margin: auto;
 }
