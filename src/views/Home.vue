@@ -16,7 +16,7 @@
               recevez vos salaires
               Transférez de l'argent entre votre compte FREEMO-PAY et vers un correspondant ayant ou pas l'application
               transférez de l'argent entre votre compte bancaire et votre comte Freemo Pay
-              transférez de l'argent entre votre compte bitcon et votre compte
+              
               payez vos assurances
               payez vos achats en ligne avec votre compte Fremo Pay</h5>
 
