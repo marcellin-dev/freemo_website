@@ -12,7 +12,7 @@
           <h5>
             <p>Déposez et retirez de l'argent</p>
               <p>Transférez de l'argent</p>
-              payez vos factures
+              Payez vos factures
               <p>Payez des produits et services sans vous souciez des problèmes de monnaies</p>
               
               Transférez de l'argent de votre compte FREEMO-PAY  vers un correspondant ayant ou pas l'application
