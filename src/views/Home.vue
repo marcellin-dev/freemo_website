@@ -103,7 +103,7 @@ export default {
 .back{
   /* height: 500px; */
 /* clip-path: polygon(0% 1.13%, 100% 1.13%, 100% 54.21%, 0% 54.21%); */
-background-color: #000000;
+/* background-color: #000000; */
   /* width: 100%; */
 }
 .marge{
@@ -118,7 +118,7 @@ background-color: #000000;
   height: 40%;
 }
 h3{
-  color: red;
+  color: white;
   font-weight: bold;
   margin: auto;
 }
