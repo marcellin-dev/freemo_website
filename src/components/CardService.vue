@@ -32,6 +32,7 @@ export default {
 
 .texte{
     font-weight: bold;
+    font-size: 20px
 
 }
 .image{

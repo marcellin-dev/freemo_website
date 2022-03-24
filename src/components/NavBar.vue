@@ -3,9 +3,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid row-lg">
         <div class="col-lg">
-          <a class="navbar-brand" href="#">
+          <router-link class="navbar-brand" :to="{name: 'home'}">
             <img class="logo" src="../assets/logo.png" alt="" />
-          </a>
+          </router-link>
         </div>
         <button
           class="navbar-toggler btn-nav"
@@ -72,6 +72,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 .activeClass {
   color: red;
   border-style: none;

@@ -1,17 +1,17 @@
 <template>
-    <div class="footer">
+    <div class="footer mt-5">
 
         <div class="row">
             <div class="col-12 col-md-3">
                 <img class="logo" src="../assets/logo.png" alt="" />
-                <p>© FREEMO Mobile Money</p>
+                <p class="desktop">© FREEMO Mobile Money</p>
             </div>
 
             <div class="col-12 col-md-3">
-                <p>L'entreprise</p>
-                <p>Home</p>
-                <p>A propos</p>
-                <p>Contact</p>
+                
+                <p><router-link :to="{name: 'home'}"> Home</router-link></p>
+                <p><router-link :to="{name: 'about'}"> A propos</router-link></p>
+                <p> <router-link :to="{name: 'contact'}"> Contact</router-link></p>
 
             </div>
 
@@ -26,6 +26,7 @@
             <div class="col-12 col-md-3"> 
                 <p><img class="size" src="../assets/google-play-badge.png" alt="" /></p>
                <p> <img class="size" src="../assets/app-store-badge.svg" alt="" /></p>
+               <p class="mobile">© FREEMO Mobile Money</p>
             </div>
         </div>
     </div>
@@ -39,5 +40,20 @@
 .logo {
   width: 80px;
   height: 50px;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop{
+        display: none
+    }
 }
 </style>

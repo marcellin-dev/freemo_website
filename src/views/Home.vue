@@ -5,7 +5,7 @@
       <div class="row back ">
         
 
-        <div class="col-12 col-md-7 texte">
+        <div class="col-12 col-md-7 texte mt-5">
           <br>
           <h3>Depuis votre application Freemo, accédez à l'univers des services Freemo Pay</h3>
           <br>
@@ -34,16 +34,26 @@
       </div>
       
     
-      <div class="container ">
-          <p class="shadow mt-4">Depuis votre application Freemo, accédez à l'univers des services Freemo Pay</p>
+      <div class="container mt-5">
+          <p class=" mt-5 titre" >FREEMOPAY c'est </p>
       
       <div class="row  services mt-5">
-      
-        <div class="col-12 col-md-6 col-sm-6 marge my-2 " v-for="item in datas" :key="item.logo">
+        <div class="col">
+
+        </div>
+        <div class="col-7">
+            <div class="row">
+               <div class="col-12 col-md-6 col-sm-12 marge my-2 " v-for="item in datas" :key="item.logo">
           <CardService
             :infos="item"
            />
         </div>
+            </div>
+        </div>
+        <div class="col">
+
+        </div>
+       
        
       </div>
 
@@ -96,6 +106,10 @@ export default {
  
 }
 
+.titre{
+  font-size: 20px;
+  font-weight: bold;
+}
 .size{
     width: 150px;
   height: 50px;
@@ -121,10 +135,12 @@ h3{
   color: black;
   font-weight: bold;
   margin: auto;
+  font-size: 14px;
 }
 h5{
   color: black;
   font-weight: bold;
   margin: auto;
+  font-size: 12px;
 }
 </style>
