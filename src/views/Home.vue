@@ -38,10 +38,10 @@
           <p class=" mt-5 titre" >FREEMOPAY c'est </p>
       
       <div class="row  services mt-5">
-        <div class="col">
+        <div class="col-lg">
 
         </div>
-        <div class="col-7">
+        <div class="col-lg-7 col">
             <div class="row">
                <div class="col-12 col-md-6 col-sm-12 marge my-2 " v-for="item in datas" :key="item.logo">
           <CardService
@@ -50,7 +50,7 @@
         </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg">
 
         </div>
        
