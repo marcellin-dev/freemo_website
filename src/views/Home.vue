@@ -7,20 +7,13 @@
 
         <div class="col-12 col-md-7 texte mt-5">
           <br>
-          <h3>Depuis votre application Freemo, accédez à l'univers des services Freemo Pay</h3>
+          <h3>Accédez à l'univers des services financiers avec FREEMO-PAY</h3>
+
+                <p>* Déposez et retirez </p>
+                <p>* Payez vos factures</p>
           <br>
-          <h5>
-            <p>Déposez et retirez de l'argent</p>
-              <p>Transférez de l'argent</p>
-              Payez vos factures
-              <p>Payez des produits et services sans vous souciez des problèmes de monnaies</p>
+          
               
-              Transférez de l'argent de votre compte FREEMO-PAY  vers un correspondant ayant ou pas l'application
-              <p>Transférez de l'argent entre votre compte bancaire et votre comte Freemo Pay</p>
-              
-              Payez vos assurances
-              <p>Payez vos achats en ligne avec votre compte Fremo Pay</p>
-              </h5>
 
               <p><img class="size" src="../assets/google-play-badge.png" alt="" />
                <img class="size mx-4" src="../assets/app-store-badge.svg" alt="" /></p>
@@ -60,14 +53,14 @@
       <div class="row mt-5">
 
         <p class="fw-bold">Startup soutenue par </p>
-        <div class="col">
+        <div class="col-12 col-sm">
             <img src="../assets/kmer.png" alt=" kmer tect">
         </div>
-        <div class="col">
+        <div class="col-12 col-sm">
            <img src="../assets/pma.png" alt="pma">
         </div>
 
-        <div class="col">
+        <div class="col-12 col-sm">
            <img src="../assets/dbs.png" alt=" dbs">
         </div>
       </div>
