@@ -9,7 +9,7 @@
           <br>
           <h3>Accédez à l'univers des services financiers avec FREEMO-PAY</h3>
 
-                <p>* Déposez et retirez </p>
+                <p>* Déposez et retirez votreargent </p>
                 <p>* Payez vos factures</p>
           <br>
           
