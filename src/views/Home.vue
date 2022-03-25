@@ -4,15 +4,19 @@
       
       <div class="row back ">
         
+         <div class="col-lg-2"></div>
 
-        <div class="col-12 col-md-7 texte mt-5">
+        <div class="col-12 col-md texte mt-5">
           <br>
-          <h3>Accédez à l'univers des services financiers avec FREEMO-PAY</h3>
+         
+          <h3><p>Accédez à l'univers des services financiers avec FREEMO-PAY</p></h3>
 
-                <p>* Déposez et retirez votreargent </p>
-                <p>* Payez vos factures</p>
-          <br>
-          
+               <h5>
+                  <p>* Déposez et retirez votre argent </p>
+                <p>*  payez gratuitement vos factures</p>
+                <p>* Transférez à 0%</p>
+               </h5>
+         
               
 
               <p><img class="size" src="../assets/google-play-badge.png" alt="" />
@@ -23,12 +27,13 @@
            <img class="shadow image " alt="Vue logo" src="../assets/freemo.jpg">
          
         </div>
+        <div class="col-lg-2"></div>
 
       </div>
       
     
       <div class="container mt-5">
-          <p class=" mt-5 titre" >FREEMOPAY c'est </p>
+          <p class=" mt-5 titre" >FREE<span class="freemo text-danger">MO</span>-PAY c'est </p>
       
       <div class="row  services mt-5">
         <div class="col-lg">
@@ -100,14 +105,16 @@ export default {
 }
 
 .titre{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  font-family: 'GT Walsheim Bold', sans-serif;
 }
 .size{
     width: 150px;
   height: 50px;
 }
 .back{
+  background-image: url('../assets/test1.jpg');
   /* height: 500px; */
 /* clip-path: polygon(0% 1.13%, 100% 1.13%, 100% 54.21%, 0% 54.21%); */
 /* background-color: #000000; */
@@ -120,20 +127,22 @@ export default {
 .image{
   height: 300px;
   margin-top: 30px;
+  width: 50%
 }
 .texte{
   height: 40%;
 }
 h3{
-  color: black;
+  color: white;
   font-weight: bold;
   margin: auto;
-  font-size: 14px;
+  font-size: 25px;
 }
 h5{
-  color: black;
+  color: white;
   font-weight: bold;
   margin: auto;
-  font-size: 12px;
+  font-size: 16px;
 }
+.freemo{}
 </style>

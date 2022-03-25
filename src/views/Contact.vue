@@ -1,6 +1,6 @@
 <template>
   <div class="contact mt-5">
-      <p class="mt-4"><h2>Envoyez nous un message via whatsapp ou par email</h2></p>
+     <h2> <p class="mt-4 fw-bold">Envoyez nous un message via whatsapp ou par email </p> </h2>
     <br><br>
     <div class="row container mt-5 mx-2">
       <div class="col-12 col-md-6 hover">
