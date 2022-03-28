@@ -24,7 +24,7 @@
         </div>
 
         <div class="col-12 col-md ">
-           <img class="shadow image " alt="Vue logo" src="../assets/freemo.jpg">
+           <img class="image  " alt="Vue logo" src="../assets/test2.jpeg">
          
         </div>
         <div class="col-lg-2"></div>
@@ -114,7 +114,7 @@ export default {
   height: 50px;
 }
 .back{
-  background-image: url('../assets/test1.jpg');
+  /* background-image: url('../assets/test1.jpg'); */
   /* height: 500px; */
 /* clip-path: polygon(0% 1.13%, 100% 1.13%, 100% 54.21%, 0% 54.21%); */
 /* background-color: #000000; */
@@ -125,21 +125,21 @@ export default {
 }
 
 .image{
-  height: 300px;
+  /* height: 300px; */
   margin-top: 30px;
-  width: 50%
+  width: 95%
 }
 .texte{
   height: 40%;
 }
 h3{
-  color: white;
+  color: black;
   font-weight: bold;
   margin: auto;
   font-size: 25px;
 }
 h5{
-  color: white;
+  color: black;
   font-weight: bold;
   margin: auto;
   font-size: 16px;
