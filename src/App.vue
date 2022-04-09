@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
+  
     <!-- <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -15,11 +16,13 @@
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
 
+
 export default {
   name: 'App',
   components: {
     NavBar,
-    Footer
+    Footer,
+   
   },
 
   

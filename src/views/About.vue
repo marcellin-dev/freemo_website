@@ -27,13 +27,13 @@ un réseau financier radicalement inclusif et extrêmement abordable.
              <div class="row mt-5">
                  
                    <p class="fw-bold mt-4"> <img class="size" src="../assets/valeur.png" alt="">  <span class="font">Nos valeus,</span></p>
-               <div class="col-1"></div>
-                <div class="col-10 ">
+               <div class="col"></div>
+                <div class="col-11 ">
 
-                <div class="row back shadow">
+                <div class="row back ">
 
               
-                   <div class="col-12 col-md-6 my-2 " v-for="item in datas" :key="item.titre">
+                   <div class="col-12 col-md-5 mx-2 my-2  animValeur shadow" v-for="item in datas" :key="item.titre">
                         <CardValeur 
                         :infos="item"
                         />
@@ -41,7 +41,7 @@ un réseau financier radicalement inclusif et extrêmement abordable.
                 </div>
                    </div>
 
-                   <div class="col-1"></div>
+                   <!-- <div class="col"></div> -->
              </div>
             </div>
         </div> <br>
@@ -84,5 +84,16 @@ export default {
 .size{
     height: 50px;
     width: 50px;
+}
+
+
+.animValeur{
+
+    transition: 1s;
+}
+.animValeur:hover{
+
+      transform: scale(1.02);
+ 
 }
 </style>

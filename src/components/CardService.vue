@@ -30,6 +30,44 @@ export default {
 
 <style scoped>
 
+.card-service{
+ /* margin: auto */
+ animation-name: anim;
+ animation-duration: 3s;
+}
+
+
+.card-service{
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) ;
+  transition: 1s;
+}
+
+.card-service:hover{
+  transform: scale(1.1);
+   /* animation-duration: 3s; */
+ 
+   /* color: white; */
+   
+   font-size: 18px;
+
+
+}
+
+@keyframes anim {
+  from {
+  margin-left: 100px;
+  box-shadow: 1px 2px 3px 2px;
+  
+  }
+  to {
+  margin-left: 0px;
+    box-shadow: 1px 2px 3px 2px;
+  }
+}
+
+
 .texte{
     font-weight: bold;
     font-size: 20px

@@ -35,6 +35,54 @@
                   >
                 </router-link>
               </li>
+
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"   href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu dropdown-menu-ligth size" aria-labelledby="navbarDarkDropdownMenuLink">
+            <!-- <p class="text-center"> service quotidien</p> --> 
+            <li>
+            <router-link class="nav-link" :to="{ name: 'services', params: {type: 'quotidien'} }">
+                  <span :class="activeParam === 'quotidien' ? 'activeClass' : ''"
+                    > service quotidien
+                  </span>
+                </router-link>
+            </li>
+            <li>
+            
+               <router-link class="nav-link " :to="{ name: 'services', params: {type: 'payment'} }">
+                  <span :class="activeParam === 'payment' ? 'activeClass' : ''" >
+                    service de paiement 
+                  </span>
+                </router-link>
+
+            </li>
+            <li>
+            
+              <router-link class="nav-link" :to="{ name: 'services', params: {type: 'commercial'} }">
+                  <span :class="activeParam === 'commercial' ? 'activeClass' : ''"
+                    > service commercial <span class="line"></span
+                  ></span>
+                </router-link>
+
+            </li>
+
+
+            <!-- <p class="text-center"> service de paiement</p>
+            <li><a class="dropdown-item " href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+            <p class="text-center"> service commercial</p>
+            <li><a class="dropdown-item " href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+
+
+          </ul>
+            </li>
+
               <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'about' }">
                   <span :class="active === 'about' ? 'activeClass' : ''"
@@ -66,19 +114,25 @@ export default {
     active() {
       return this.$route.name;
     },
+
+  activeParam() {
+      return this.$route.params.type;
+    },
+
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
 .activeClass {
   color: red;
   border-style: none;
 }
 
+.size{
+  width: 200px;
+}
 .line {
   height: 15px;
   width: 10px;

@@ -24,7 +24,9 @@
         </div>
 
         <div class="col-12 col-md ">
-           <img class="image  " alt="Vue logo" src="../assets/test2.jpeg">
+           <!-- <img class="image  " alt="Vue logo" src="../assets/test2.jpeg"> -->
+
+           <span class="image  "> <Slider /> </span>
          
         </div>
         <div class="col-lg-2"></div>
@@ -79,11 +81,13 @@
 // @ is an alias to /src
 // import NavBar from '@/components/NavBar.vue'
 import CardService from '../components/CardService.vue';
+import Slider from '../components/Slider.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    CardService
+    CardService,
+    Slider
   },
   data(){
     return {
@@ -104,6 +108,31 @@ export default {
  
 }
 
+
+.image{
+ /* margin: auto */
+ animation-name: anim;
+ animation-duration: 3s;
+ /* animation-delay: 3s; */
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+  from {
+ transform: rotateZ(0deg);
+ transform: rotateX(0deg);
+ transform: rotateY(0deg);
+  box-shadow: 1px 2px 1px 2px ;
+  
+  }
+  to {
+    transform: rotateX(20deg);
+    /* transform: rotateY(10deg);
+    transform: rotateZ(-15deg); */
+    box-shadow: 1px 2px 3px 2px;
+  }
+}
+
 .titre{
   font-size: 30px;
   font-weight: bold;
@@ -119,9 +148,6 @@ export default {
 /* clip-path: polygon(0% 1.13%, 100% 1.13%, 100% 54.21%, 0% 54.21%); */
 /* background-color: #000000; */
   /* width: 100%; */
-}
-.marge{
- /* margin: auto */
 }
 
 .image{
