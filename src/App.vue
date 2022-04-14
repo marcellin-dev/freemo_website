@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <NavBar />
+    <NavBar v-if="display != 'devmode' " />
   
-    <!-- <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav> -->
+      <!-- <div class="spinner" id="spin">
+
+       
+    <div class="inline">
+           <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+    </div>
+      </div> -->
+
     <router-view/>
-    <Footer />
+    <Footer v-if="display != 'devmode' " />
   </div>
 </template>
 
@@ -25,6 +29,22 @@ export default {
    
   },
 
+computed: {
+
+  display(){
+    return this.$route.name;
+  }
+},
+
+  mounted(){
+
+    window.onload = function() {
+       let spin = document.getElementById('spin');
+    spin.classList.add('hide');
+        }
+    
+  }
+
   
 }
 </script>
@@ -39,7 +59,27 @@ export default {
   color: #2c3e50;
 }
 
+  #spinner{  
+           
+            animation: spin 1s linear infinite;
+            color:red;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+.inline{
+    display: flex;
+}
+.spinner i{
+    margin-top: 10px;
+    margin-left: 50px;
+}
 
-
+.hide{
+  display: none;
+}
 
 </style>

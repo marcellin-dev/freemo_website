@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue';
 import About from '../views/About.vue';
-import Services from '../views/services.vue'
+import Services from '../views/services.vue';
+import DevMode from '../views/DevMode.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,12 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+
+   {
+    path: '/dev',
+    name: 'devmode',
+    component: DevMode
   },
   
   {

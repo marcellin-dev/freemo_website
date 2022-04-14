@@ -9,6 +9,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 Vue.config.productionTip = false
 
 new Vue({
+
+  created(){
+      this.$router.push({name: "devmode"})
+  },
+
   router,
   store,
   render: h => h(App)
