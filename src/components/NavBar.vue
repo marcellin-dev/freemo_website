@@ -1,6 +1,6 @@
 <template>
   <div class="navbar1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
       <div class="container-fluid row-lg">
         <div class="col-lg">
           <router-link class="navbar-brand" :to="{name: 'home'}">
