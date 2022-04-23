@@ -1,9 +1,24 @@
 <template>
     <div class="footer mt-5">
+            <br><br>
+
+             <!-- <div class="row mt-5">
+
+        <p class="fw-bold">Startup soutenue par </p>
+        <div class="col-12 col-sm">
+            <img src="../assets/kmer.png"  alt=" kmer tect">
+        </div>
+        <div class="col-12 col-sm">
+           <img src="../assets/pma.png"  alt="pma">
+        </div>
+
+
+      </div>
+        <br> <br> <br> -->
 
         <div class="row">
             <div class="col-12 col-md-3">
-                <img class="logo" src="../assets/logo.png" alt="" />
+                <img class="logo bg-white" src="../assets/logo.png" alt="" />
                 <p class="desktop">© FREEMO Mobile Money</p>
             </div>
 
@@ -33,13 +48,21 @@
 </template>
 
 <style scoped>
+
 .size{
     width: 150px;
   height: 50px;
 }
+img{
+          width: 150px;
+      height: 80px;
+    }
+
 .logo {
   width: 80px;
   height: 50px;
+  padding: 0px;
+  border-radius: 5px;
 }
 a{
     text-decoration: none;
@@ -55,5 +78,18 @@ a{
     .desktop{
         display: none
     }
+}
+
+p{
+    color: white;
+}
+
+.footer{
+    background-color: #eb0c12 
+}
+
+.anim {
+  transform: translateX(10);
+  transform: rotate(30deg)
 }
 </style>

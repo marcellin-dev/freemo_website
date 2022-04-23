@@ -1,9 +1,9 @@
 <template>
   <div class="navbar1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
       <div class="container-fluid row-lg">
         <div class="col-lg">
-          <router-link class="navbar-brand" :to="{name: 'home'}">
+          <router-link class="navbar-brand" :to="{ name: 'home' }">
             <img class="logo" src="../assets/logo.png" alt="" />
           </router-link>
         </div>
@@ -36,40 +36,64 @@
                 </router-link>
               </li>
 
-                <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"   href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu dropdown-menu-ligth size" aria-labelledby="navbarDarkDropdownMenuLink">
-            <!-- <p class="text-center"> service quotidien</p> --> 
-            <li>
-            <router-link class="nav-link" :to="{ name: 'services', params: {type: 'quotidien'} }">
-                  <span :class="activeParam === 'quotidien' ? 'activeClass' : ''"
-                    > service quotidien
-                  </span>
-                </router-link>
-            </li>
-            <li>
-            
-               <router-link class="nav-link " :to="{ name: 'services', params: {type: 'payment'} }">
-                  <span :class="activeParam === 'payment' ? 'activeClass' : ''" >
-                    service de paiement 
-                  </span>
-                </router-link>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-ligth size"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <!-- <p class="text-center"> service quotidien</p> -->
+                  <li>
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'services', params: { type: 'quotidien' } }"
+                    >
+                      <span
+                        :class="
+                          activeParam === 'quotidien' ? 'activeClass' : ''
+                        "
+                      >
+                        service quotidien
+                      </span>
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'services', params: { type: 'payment' } }"
+                    >
+                      <span
+                        :class="activeParam === 'payment' ? 'activeClass' : ''"
+                      >
+                        service de paiement
+                      </span>
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'services', params: { type: 'commercial' } }"
+                    >
+                      <span
+                        :class="
+                          activeParam === 'commercial' ? 'activeClass' : ''
+                        "
+                      >
+                        service commercial <span class="line"></span
+                      ></span>
+                    </router-link>
+                  </li>
 
-            </li>
-            <li>
-            
-              <router-link class="nav-link" :to="{ name: 'services', params: {type: 'commercial'} }">
-                  <span :class="activeParam === 'commercial' ? 'activeClass' : ''"
-                    > service commercial <span class="line"></span
-                  ></span>
-                </router-link>
-
-            </li>
-
-
-            <!-- <p class="text-center"> service de paiement</p>
+                  <!-- <p class="text-center"> service de paiement</p>
             <li><a class="dropdown-item " href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -78,10 +102,8 @@
             <li><a class="dropdown-item " href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-
-
-          </ul>
-            </li>
+                </ul>
+              </li>
 
               <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'about' }">
@@ -115,10 +137,9 @@ export default {
       return this.$route.name;
     },
 
-  activeParam() {
+    activeParam() {
       return this.$route.params.type;
     },
-
   },
 };
 </script>
@@ -130,7 +151,7 @@ export default {
   border-style: none;
 }
 
-.size{
+.size {
   width: 200px;
 }
 .line {

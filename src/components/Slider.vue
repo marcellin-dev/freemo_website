@@ -3,21 +3,28 @@
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../assets/test2.jpeg" class="d-block w-100" alt="...">
+    <div class="carousel-item active ">
+      <img src="../assets/test2.jpeg" class="d-block w-100 slider-img" alt="...">
+      
+
+      <div class="carousel-caption d-md-block">
+        <h5 class="text-danger">  <p> Déposez et retirez votre argent </p></h5>
+      
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/epargne.png" class="d-block w-100" alt="...">
+      <img src="../assets/epargne.png" class="d-block w-100 slider-img" alt="...">
 
        <div class="carousel-caption d-md-block">
-        <h5 class="text-danger">Faites vos économies  </h5>
+        <h5 class="text-danger">  <p> payez gratuitement vos factures</p> </h5>
       
       </div>
     </div>
     <div class="carousel-item back">
-      <img src="../assets/securite.png" class="d-block w-100" alt="...">
+      <img src="../assets/securite.png" class="d-block w-100 slider-img" alt="...">
        <div class="carousel-caption  d-md-block">
-        <h5 class="text-dark">Votre securité <p>notre priorité</p> </h5>
+        <h5 class="text-dark"> <p> Transférez à 0%</p> </h5>
+       
       
       </div>
     </div>
@@ -36,5 +43,10 @@
 <style scoped>
 .back{
     /* background-color:rgba(0, 0, 0, 0.371); */
+}
+
+.slider-img{
+  height: 300px;
+  width: 400px;
 }
 </style>
