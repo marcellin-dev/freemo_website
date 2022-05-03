@@ -16,8 +16,6 @@
           <!-- <p> Déposez et retirez votre argent </p>
                 <p> payez gratuitement vos factures</p>
                 <p> Transférez à 0%</p> -->
-
-          <Slider />
         </h5>
 
         <p>
@@ -39,6 +37,7 @@
         </span>
       </div>
       <!-- <div class="col-lg-2"></div> -->
+      <Slider />
     </div>
 
     <div class="container mt-5">
