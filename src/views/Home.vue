@@ -10,6 +10,9 @@
 
         <h3 class="font">
           <p>Accédez à l'univers des services financiers avec FREEMO-PAY</p>
+          <span class="mobile">
+            <Slider />
+          </span>
         </h3>
 
         <h5>
@@ -37,7 +40,9 @@
         </span>
       </div>
       <!-- <div class="col-lg-2"></div> -->
-      <Slider />
+      <span class="desktop">
+        <Slider />
+      </span>
     </div>
 
     <div class="container mt-5">
@@ -223,6 +228,18 @@ h5 {
 
   100% {
     transform: translateY(0) rotate(0) scale(1) translateX(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
   }
 }
 </style>
