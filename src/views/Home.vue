@@ -181,12 +181,7 @@ export default {
 .texte {
   height: 40%;
 }
-h3 {
-  color: black;
-  font-weight: bold;
-  margin: auto;
-  font-size: 25px;
-}
+
 h5 {
   color: black;
   font-weight: bold;
@@ -235,11 +230,25 @@ h5 {
   .desktop {
     display: none;
   }
+
+  h3 {
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .mobile {
     display: none;
+  }
+
+  h3 {
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    font-size: 25px;
   }
 }
 </style>
