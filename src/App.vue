@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <NavBar v-if="display != 'devmode' " />
-  
-      <!-- <div class="spinner" id="spin">
+    <span class="position">
+      <NavBar v-if="display != 'devmode'" />
+    </span>
+
+    <!-- <div class="spinner" id="spin">
 
        
     <div class="inline">
@@ -10,47 +12,42 @@
     </div>
       </div> -->
 
-    <router-view/>
-    <Footer v-if="display != 'devmode' " />
+    <router-view />
+    <Footer v-if="display != 'devmode'" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import NavBar from './components/NavBar.vue';
-import Footer from './components/Footer.vue';
-
+import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavBar,
     Footer,
-   
   },
 
-computed: {
+  computed: {
+    display() {
+      return this.$route.name;
+    },
+  },
 
-  display(){
-    return this.$route.name;
-  }
-},
-
-  mounted(){
-
-    window.onload = function() {
-       let spin = document.getElementById('spin');
-    spin.classList.add('hide');
-        }
-    
-  }
-
-  
-}
+  mounted() {
+    window.onload = function () {
+      let spin = document.getElementById("spin");
+      spin.classList.add("hide");
+    };
+  },
+};
 </script>
 
-
 <style>
+.position {
+  /* position: absolute; */
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -59,27 +56,25 @@ computed: {
   color: #2c3e50;
 }
 
-  #spinner{  
-           
-            animation: spin 1s linear infinite;
-            color:red;
-        }
-          
-        @keyframes spin {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-.inline{
-    display: flex;
-}
-.spinner i{
-    margin-top: 10px;
-    margin-left: 50px;
+#spinner {
+  animation: spin 1s linear infinite;
+  color: red;
 }
 
-.hide{
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.inline {
+  display: flex;
+}
+.spinner i {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.hide {
   display: none;
 }
-
 </style>

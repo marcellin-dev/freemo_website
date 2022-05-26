@@ -171,4 +171,16 @@ export default {
   /* height: 300px;
   width: 400px; */
 }
+
+@media only screen and (max-width: 768px) {
+  img {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    height: 400px;
+  }
+}
 </style>
